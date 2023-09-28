@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labo 2 - Opdracht 10</title>
+</head>
+<body>
+<H1> Opdracht 10</H1><br>
+<strong>Wat is er verkeerd in onderstaand HTML fragment?</strong><br>
+
+<br>
+<.ul><br>
+    <.li>een<./.li><br>
+    <.li>twee<./.li><br>
+    <.ol><br>
+        <.li>jan<./.li><br>
+        <.li>piet<./li><br>
+        <.li>joris<./li><br>
+    <./.ol><br>
+    <.li>vier<./li><br>
+<./.ul><br>
+
+<br>*NOTE: Om de code te kunnen zien werd er een "." in de tag geplaatst.
+
+<br>een "ol"-tag (genummerde lijst) kan niet worden geopend zonder dat de al-geopende "ul"-tag gesloten wordt.
+<br>De code hieronder, daarintegen, is wel plausibel.<br>
+<br><.ul><br>
+    <.li>een<./li><br>
+    <.li>twee<./li><br>
+<./ul><br>
+<.ol><br>
+    <.li>jan<./li><br>
+    <.li>piet<./li><br>
+    <.li>joris<./li><br>
+    <./ol><br>
+    <.ul><br>
+        <.li>vier<./li><br>
+    <./ul><br>
+
+<br>*NOTE: Om de code te kunnen zien werd er een "." in de tag geplaatst.
+
+<br>Dit resulteert in:
+<br>
+<ul>
+    <li>een</li>
+    <li>twee</li>
+</ul>
+<ol>
+    <li>jan</li>
+    <li>piet</li>
+    <li>joris</li>
+</ol>
+<ul>
+    <li>vier</li>
+</ul>
+
+<a href="../index.html">Ga terug naar Home Page</a>
+</body>
+
+</html>

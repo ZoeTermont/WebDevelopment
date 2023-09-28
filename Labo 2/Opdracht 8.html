@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labo 2 - Opdracht 8</title>
+</head>
+<body>
+<h1> Opdracht 8</h1>
+<p>
+    <strong> Voer de volgende code in: <.span>hier komt een<./span><.a href="">link<./a><.span> te staan<./span>.
+        <br>Uitgevoerd wordt dit: </strong><br>
+
+<br><span>hier komt een </span><a href="">link</a><span> te staan</span><br>
+
+<br>De auteur beslist plots dat de tekst "een link" benadrukt moet worden dmv. een <"strong"> element
+    en verandert bovenstaande naar:<br>
+    <.span>hier komt <.strong>een<./span><.a href="">link<./a><./strong><.span> te staan<./span><br>
+
+    <br><strong>Waarom is dit niet correct, en hoe moet het dan wel?<br></strong><br>
+
+    De originele volgorde is:<strong>"span, strong, /span, /strong"</strong> wat niet kan.
+    <br> Het is onmogelijk om tags geschrankt te openen.
+    <br>Wat wel kan is <strong>"span, strong, /strong,/span"</strong>
+    <br>De gecorrigeerde versie ziet er zo uit: <br>
+
+    <br><span>hier komt <strong>een <a href="">link</a></strong></span><span> te staan</span>
+
+
+
+</p>
+<br> <a href="../index.html">Ga terug naar Home Page</a>
+</body>
+</html>
