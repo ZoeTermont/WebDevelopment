@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Labo 3 - Opdracht 3</title>
+</head>
+<body>
+<h1>Labo 3</h1>
+<h2>Opdracht 3</h2>
+<p>
+    <strong>Uit welke elementen bestaat elke accordion section in de DOM-tree?</strong><br>
+    <br>De accordeon section bestaat uit een geïntegreerd html document; dit begint met een Doctype=html.<br>
+    Hierin werd een head-element en body-element geplaatst.<br>
+    In het body-element werd een div-element geplaatst, met daarin een aantal heading-elementen.<br>
+    Naast de head-elementen zit er ook nog een Sectienaam, en een span-element in genest. <br>
+    In ditzelfde body-element werd er een nieuwe div aangemaakt met daarin een p-element met de eigenlijke
+    tekst die we te zien krijgen.<br>
+    <br><strong>Welke wijzigingen gebeuren er in de DOM-tree als je op een gesloten section klikt?</strong><br>
+    <br>Nadat er wordt geklikt op een andere sectie in de accordion section verandert er voornamelijk iets in de body.<br>
+    Bij de heading veranderen alle booleans naar false, alles wat op active stond verandert naar collapsed en tot slot zal de tabindex van 0 naar -1 veranderen.<br>
+    Bij de aangeklikte sectie, diegene die zal worden uitgeklapt, gebeurt het omgekeerde.<br>
+<br><strong>Heel wat attributen toegevoegd aan de oorspronkelijke elementen. Hoe komt dit?</strong><br>
+    <br>Bij de Chrome developer tools elementen werd er bij de "h3" en "div" elementen steeds een “class” aangemaakt, wat de accordeon specifieerde. <br>
+    Bij de view source code werd er enkel een ID toegevoegd.
+
+</p>
+<br><br> <a href="../../index.html">Ga terug naar Home Page</a><br>
+</body>
+</html>

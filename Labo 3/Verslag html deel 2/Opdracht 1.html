@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Labo 3 - Opdracht 1</title>
+</head>
+<body>
+<H1>Labo 3</H1>
+<h2>Opdracht 1</h2>
+<p>
+    <strong>Vergelijk het schema en de HTML-code.
+        De structuur van de DOM-tree is gebaseerd op de nestign structuur van het HTML-document.<br>
+        Waarmee komen de blokjes overeen?<br>
+        En de lijntjes ertussen?</strong>
+</p>
+
+De blokjes van de DOM structuur komen overeen met de elementen.<br>
+Bijvoorbeeld:<br>
+Document= <"!DOCTYPE html">; dit bevat:<br>
+<ul>
+    <li>Html=<"html">; dit bevat;</li>
+    <ul>
+        <li>Head= <"head">; wat de volgende elementen erin genest heeft:</li>
+        <ul>
+            <li>Meta=<"meta charset=”utf-8”"></li>
+            En
+            <li>Title=<"title">...<"/title"></li>
+        </ul>
+    </ul>
+
+    Onder html zit ook:
+    <ul>
+        <li>Body=<.body>….<"body">; wat de volgende elementen bevat:</li>
+        <ul>
+            <li>Header 1= <"h1">Heading 1 (h1)<"/h1"></li>
+            <li>Header 2= <"h2">Heading 2 (h2)<"/h2"></li>
+            <li>Header 3= <"h3">Heading 3 (h3)<"/h3"></li>
+            <li>Header 4= <"h4">Heading 4 (h4)<"/h4"></li>
+            <li>Header 5= <"h5">Heading 5 (h5)<"/h5"></li>
+            <li>Header 6= <"h6">Heading 6 (h6)<"/h6"></li>
+            En
+            <li>Paragraph: <"p">…<"/p"></li>
+            Waarin een link naar een website genest zit:
+            <ul>
+                <li><"a href=http://www.htmldog.com/examples/"></li>
+                En een link naar een foto:
+                <li><"img src=http://www.htmldog.com/badge1.gif alt=“HTML Dog”"><"/.a"></li>
+            </ul>
+        </ul>
+    </ul>
+</ul>
+<p>
+De lijntjes tussen de blokjes komen overeen met hun hiërarchische volgorde.<br>
+De headers (Hx), die elementen op zichzelf zijn, worden in het moeder-element BODY geplaatst, <br>
+Het BODY-element wordt op zijn beurt weer het HTML- element, wat in het DOCUMENT-element wordt geplaatst.<br>
+Hetzelfde geldt voor Meta en TITLE. Zij worden in het moeder element HEAD geplaatst.<br>
+Het HEAD-element wordt in het HTML-element, wat dan weer in het document-element wordt geplaatst.
+</p>
+<br> <a href="../../index.html">Ga terug naar Home Page</a><br>
+</body>
+</html>
