@@ -1,0 +1,23 @@
+section header
+{font-family: Arial,sans-serif;}
+
+section header h1
+{font-size: 1.8em;}
+
+section header h2
+{font-size: 1.5em;}
+
+section header h3
+{font-size: 1.4em;}
+
+p{font-family: New Roman, serif;
+   font-size: 1.2em;}
+
+.paragraph1
+{color: red;}
+
+.paragraph2
+{color:green;}
+
+.paragraph3
+{color: blue;}
