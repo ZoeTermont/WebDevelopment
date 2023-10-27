@@ -1,0 +1,10 @@
+.checklist{
+    list-style: url("../Opdracht 6/checkOff.png");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.checked {
+    list-style: url("../Opdracht 6/checkOn.png");
+}
+
+
