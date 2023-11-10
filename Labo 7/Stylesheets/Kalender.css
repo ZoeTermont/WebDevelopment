@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+
+}
+table td {
+    padding: 0.5rem;
+    border: 1px dotted black;
+}
+
+
+table>thead>tr>th{
+    background: rgb(170,170,200) ;
+}
+table tbody tr td.newMonth{
+    background-color: grey;
+    color: dimgray;
+}
+#days{
+    background-color:  rgb(35,37,70);
+    color:  rgb(200,190,240);
+}
+table:first-child{
+    background: rgb(255, 220, 220);
+}
+#vrij{
+background: rgb(250,120,120);
+}
+tbody tr td:last-child, tbody tr td:first-child{
+background: rgb(255, 220, 220);
+}

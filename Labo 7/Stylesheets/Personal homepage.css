@@ -1,0 +1,131 @@
+/*GENERAL*/
+html{
+    font-family: "Noto Serif Georgian", monospace;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #E6FFF9;
+}
+
+/*LINKS*/
+a:link{
+    color:blue;
+}
+a:hover{
+    font-weight: bold;
+    font-size:17px;
+}
+a:visited{
+    color:blue;
+}
+
+nav{
+    text-align: center;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: lightsteelblue;
+}
+
+
+/*HOMEPAGE*/
+h1{
+    text-align:center;
+}
+
+/*INTRODUCTION*/
+#Introduction{
+    padding-left: 45%;
+}
+#Introduction>ul{
+
+    font-size:15px;
+}
+
+#imgHomepage{
+    float: left;
+    padding-top:2%;
+    padding-left:5%;
+    max-height: 450px;
+    max-width:250px;
+}
+
+
+
+/*HOBBIES*/
+#Hobbies{
+    margin-left: 5%;
+    padding-top: 2%;
+}
+
+#UNC{
+    list-style: url("../Images/UNCO_bear.png");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+#Reading{
+    list-style: url("../Images/Book.jpg");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+#Activities{
+    list-style: url("../Images/Activities.png");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+
+/*ENTERTAINMENT*/
+#Entertainment{
+    margin-left: 5%;
+    padding-top: 2%;
+}
+#Stellar{
+    list-style: url("../Images/Stellar_icon.jpg");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+#imgStellar{
+    max-height:290px;
+    max-width:222px;
+}
+#Marshmello{
+    list-style: url("../Images/Marshmello_icon.jpg");
+    list-style-type: circle;
+    list-style-position: outside;
+}
+#imgMarshmello{
+    max-height: 300px;
+}
+#EntertainmentVid{
+
+    max-width:320px;
+    max-height:240px;
+}
+
+
+/*FRIENDS*/
+#Friends{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#Friends>p{
+    font-family: "Noto Serif Georgian", monospace;
+}
+/*round corners of table*/
+table { border-collapse: collapse; text-align: left; width: 100%; }
+
+/*Font & border table*/
+#Friends{font: normal 12px/150% Courier New, Courier, monospace; background: #fff; overflow: hidden; border: 9px solid #a4e6ed; -webkit-border-radius: 20px; -moz-border-radius: 20px;}
+
+/*Height & width table*/
+table td, #Friends table th { padding: 9px 12px; }
+
+/*color header*/
+table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0C8B99), color-stop(1, #C2A3FF) );background:-moz-linear-gradient( left top, #0C8B99 5%, #C2A3FF 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0C8B99', endColorstr='#C2A3FF');background-color:#0C8B99; color:#FFFFFF; font-size: 13px; font-weight: bold; border-left: 1px solid #0070A8; }
+
+/*Alternating row colors*/
+table tbody .alt td { background: #E1EEf4; color: #00557F; }
+
+
+
+
+
+
