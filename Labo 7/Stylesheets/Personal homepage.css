@@ -1,8 +1,10 @@
 /*GENERAL*/
-html{
+body{
     font-family: "Noto Serif Georgian", monospace;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 100%;
+    overflow: auto;
     background-color: #E6FFF9;
 }
 
@@ -18,11 +20,12 @@ a:visited{
     color:blue;
 }
 
-nav{
+nav {
     text-align: center;
-    margin-left:5%;
+    margin-left: 5%;
     margin-right: 5%;
     background-color: lightsteelblue;
+    border-radius: 200px 200px 200px 200px;
 }
 
 
@@ -32,20 +35,34 @@ h1{
 }
 
 /*INTRODUCTION*/
+
 #Introduction{
-    padding-left: 45%;
+    position: fixed;
+    left: 500px;
+    margin-right: 20%;
+    padding-left: 15px;
+
+    border-radius: 15px 15px 15px 15px;
+    background-color: #fff9e6;
+    top: 120px;
+
 }
 #Introduction>ul{
-
     font-size:15px;
+    margin-right: 13%;
+
 }
 
 #imgHomepage{
     float: left;
-    padding-top:2%;
-    padding-left:5%;
+    /*padding-top:2%;*/
+    /*padding-left:10%;*/
+    position: absolute;
+    left: 250px;
     max-height: 450px;
     max-width:250px;
+    border-radius: 10px 10px 10px 10px;
+
 }
 
 
@@ -74,8 +91,16 @@ h1{
 
 /*ENTERTAINMENT*/
 #Entertainment{
-    margin-left: 5%;
+
     padding-top: 2%;
+}
+#MusicIntro{
+    text-align: center;
+}
+#music{
+
+    border-radius: 15px 15px 15px 15px;
+    background-color: steelblue;
 }
 #Stellar{
     list-style: url("../Images/Stellar_icon.jpg");
@@ -83,18 +108,37 @@ h1{
     list-style-position: outside;
 }
 #imgStellar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height:290px;
     max-width:222px;
 }
 #Marshmello{
+
     list-style: url("../Images/Marshmello_icon.jpg");
     list-style-type: circle;
     list-style-position: outside;
 }
 #imgMarshmello{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 300px;
 }
+#VidIntro{
+    text-align: center;
+}
+#TV{
+
+    border-radius: 15px 15px 15px 15px;
+    background-color: cadetblue;
+}
+
 #EntertainmentVid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     max-width:320px;
     max-height:240px;
