@@ -14,6 +14,7 @@ header{
     text-align: center;
     background-image: url("../opdracht airbus/images/bgsky3.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
     color: darkblue;
     position: relative;
 }
@@ -110,6 +111,9 @@ section div img{
 }
 #bottom div a:hover{
     color: red;
+}
+#bottom div a{
+    color: white;
 }
 
 footer{
