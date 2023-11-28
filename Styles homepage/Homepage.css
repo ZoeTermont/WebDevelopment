@@ -1,13 +1,55 @@
 html{
-    font-family: "Courier New",monospace;
-    font-size: 18px;
+    font-family: calibri, sans-serif;;
+    background-color: #E5F3FD;
+    width: 95%;
+    margin-left: 50px;
+}
+body{
     margin-left: 20px;
-    background-color: lightpink;
 }
-a{
-    color: dimgray;
+div{
+    float: left;
+    align-content: center;
+    font-size: 25px;
 }
-a:hover{
-    font-size: 20px;
+div a{
+    color: #728ab2;
+    background: #e6f7ff;
+}
+div a:hover{
+    font-weight: bold;
+    font-size: 26px;
+    color: black;
+
+}
+.Stylesheet{
+    text-indent: 25px;
+    font-size: 24px;
+}
+aside{
+    position: absolute;
+    width: 15%;
+    font-size: 15px;
+    top: 0;
+    right: 20px;
+    border: black 3px solid;
+}
+aside h3{
+    color: white;
+    background-color: #0b558a;
+    text-align: center;
+    font-size: 22px;
+}
+aside h4{
+    color: white;
+    background-color: steelblue;
+    text-align: center;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    target: parent;
+    background-color: white;
+    border: black 3px solid;
 
 }

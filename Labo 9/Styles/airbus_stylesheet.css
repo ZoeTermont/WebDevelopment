@@ -1,0 +1,120 @@
+body{
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+header img{
+    position: absolute;
+    right: 90px;
+    top: 40px;
+}
+header{
+    height: 200px;
+    text-align: center;
+    background-image: url("../opdracht airbus/images/bgsky3.jpg");
+    background-repeat: no-repeat;
+    color: darkblue;
+    position: relative;
+}
+header h1{
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+}
+header h2{
+    font-size: 240%;
+    font-weight: bold;
+}
+aside{
+    float: right;
+    width: 25%;
+    background-color:#dddddd;
+    border: #999999 1px;
+    color: #666666;
+    font-size: 90%;
+}
+aside p{
+    padding: 0 10px 0 10px;
+}
+aside h3{
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+
+section{
+    width: 75%;
+    padding-right: 10px;
+}
+section article{
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+    text-align: justify;
+    background-color: white;
+    color: black;
+}
+section article span{
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+section div{
+    float: left;
+    margin: 0;
+    background-color: white;
+}
+section div img{
+    padding: 20px 10px 0 20px;
+}
+#gallery{
+    float:left;
+    clear: left;
+    background-color: #999999;
+    border-collapse: collapse;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+}
+#gallery div{
+    float: left;
+    background-color: white;
+    border: dotted white 1px;
+    margin: 10px 10px 10px 10px;
+    height: 200px;
+    width: 200px;
+}
+#gallery div.foto img{
+    background-color: white;
+    padding: 10px;
+
+    width: 180px;
+    height: 180px;
+}
+
+
+#bottom{
+    clear: both;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+    display: inline-block;
+}
+#bottom div{
+    padding-left: 120px;
+    display: block;
+    float: left;
+}
+#bottom div a:hover{
+    color: red;
+}
+
+footer{
+    text-align: center;
+    color: black;
+    width: 100%;
+    background: white;
+}
