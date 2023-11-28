@@ -82,7 +82,7 @@ section div img{
 #gallery div{
     float: left;
     background-color: white;
-    border: dotted white 1px;
+    border: 1px black dotted;
     margin: 10px 10px 10px 10px;
     height: 200px;
     width: 200px;
