@@ -1,0 +1,79 @@
+/*GENERAL*/
+body{
+    font-family: "Noto Serif Georgian", monospace;
+    background-color: #ffe5e5;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.motto {
+    font-style: italic;
+    color: #e25822;
+    text-align: center;
+    padding-top: 10px;
+}
+header {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    background-image: url("../Images/4k-poster-lightning-mcqueen-cars-3-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header h2{
+    color:black;
+}
+header h1{
+    color: yellow;
+}
+
+img{
+    float:right;
+    width: 50%;
+}
+
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+    font-size:17px;
+}
+a:visited{
+    color:blue;
+}
+nav {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #ff9999;
+    border-radius: 200px 200px 200px 200px;
+}
+
+#friendsFamily img{
+    width: 17%;
+    padding-left: 40px;
+    float:left;
+}
+#lifeCareer img{
+
+    height: 23.5%;
+    width: auto;
+}
+
+footer{
+    text-align:center;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+

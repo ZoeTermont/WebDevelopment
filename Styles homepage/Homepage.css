@@ -1,6 +1,7 @@
 html{
     font-family: calibri, sans-serif;;
-    background-color: #E5F3FD;
+    background-color: #ffe9ec;
+   <!--E5F3FD -->
     width: 95%;
     margin-left: 50px;
 }
@@ -35,14 +36,16 @@ aside{
     border: black 3px solid;
 }
 aside h3{
+
     color: white;
-    background-color: #0b558a;
+    background-color: #ff6a80;
+    <!--0b558a -->
     text-align: center;
     font-size: 22px;
 }
 aside h4{
     color: white;
-    background-color: steelblue;
+    background-color: #ff9dab;
     text-align: center;
 }
 iframe{

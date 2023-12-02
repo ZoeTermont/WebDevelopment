@@ -16,9 +16,11 @@ article:nth-of-type(even) img
     display: block;
     float: right;
     padding-left: 10px;
+
 }
 footer{
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+    margin:0;
 }
