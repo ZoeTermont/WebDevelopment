@@ -1,0 +1,30 @@
+table{
+    width: 50%;
+    border: black 2px solid;
+    padding: 10px
+}
+th{
+    background-color: rgba(171,170,199,0.67);
+    color: rgba(0,0,103,0.67);
+}
+#days{
+    background-color: rgba(37,37,69,0.67);
+    color: black;
+}
+.new{
+    background-color: red;
+}
+.weekend{
+    background-color: green;
+}
+a:hover{
+    background-color: #6ea8fe;
+}
+tbody>tr>td>a:visited{
+    color: #0dcaf0;
+}
+aside{
+    display: inline-block;
+    position:relative;
+    float:left;
+}

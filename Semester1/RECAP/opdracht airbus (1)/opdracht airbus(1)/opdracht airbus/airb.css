@@ -1,0 +1,35 @@
+#head{
+    background-image: url("images/bgsky3.jpg");
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    font-weight: bolder;
+}
+#head img{
+
+    position: absolute;
+    right: 90px;
+    top: 25px;
+}
+aside{
+    display: block;
+    float: right;
+    width: 20%;
+    background-color: grey;
+    padding:2px;
+}
+aside h3{
+    background-color:blue;
+    text-align:center;
+}
+
+
+#introduction{
+   float: left;
+    padding: 20px 10px 20px 10px;
+}
+
+#gallery{
+    float:left;
+    background-color: grey;
+}
