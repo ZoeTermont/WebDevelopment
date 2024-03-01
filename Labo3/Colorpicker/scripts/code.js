@@ -1,11 +1,11 @@
 const setup = () => {
-    const red = document.getElementById("redSlider");
-    const green = document.getElementById("greenSlider");
-    const blue = document.getElementById("blueSlider");
+    const roodS = document.getElementById("roodS");
+    const groenS = document.getElementById("groenS");
+    const blauwS = document.getElementById("blauwS");
     update();
-    red.addEventListener("change", update);
-    green.addEventListener("change", update);
-    blue.addEventListener("change", update);
+    roodS.addEventListener("change", update);
+    groenS.addEventListener("change", update);
+    blauwS.addEventListener("change", update);
 }
 const update = () =>{
     const values = document.getElementsByClassName("Value");
@@ -20,7 +20,7 @@ const update = () =>{
             rgb += ", ";
         }
     }
-    const swatch = document.getElementById("swatch");
-    swatch.style.backgroundColor = rgb;
+    const preV = document.getElementById("preV");
+    preV.style.backgroundColor = rgb;
 }
 window.addEventListener("load", setup);

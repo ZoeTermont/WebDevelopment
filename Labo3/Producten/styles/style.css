@@ -1,0 +1,13 @@
+td{
+    border:solid 2px #bfe2e9;
+}
+th{
+    border: solid 2px #bfe2e9;
+
+}
+table{
+    border: solid 2px black;
+}
+.totaal{
+    font-weight: bolder;
+}

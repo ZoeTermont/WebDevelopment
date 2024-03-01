@@ -1,0 +1,15 @@
+div{
+    display: block;
+    width: fit-content;
+}
+.rgbSliders{
+    display: inline-block;
+}
+
+.preV{
+     display: inline-block;
+
+     margin: 5px 5px 0 1em;
+     height: 70px;
+     width: 100px;
+ }

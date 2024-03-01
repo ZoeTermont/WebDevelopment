@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Title</title>
+    <title>Oefening</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body>
 
-<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+<body>
+<h1>Color picker</h1>
+
+<div class="picker">
+    <div class="rgbSliders">
+        <div>
+            <input type="range" min="0" max="255" alt="rood" value="127" id="roodS" class="sliders"/>
+            <label for="roodS" id="idRood"> rood</label>
+            <label for="roodS" class="Value"> 127</label>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" alt="groen" value="127" id="groenS" class="sliders"/>
+            <label for="groenS" id="idGroen"> groen</label>
+            <label for="groenS" class="Value"> 127</label>
+        </div>
+        <div>
+            <input type="range" min="0" max="255" alt="blauw" value="127" id="blauwS" class="sliders"/>
+            <label for="blauwS" id="idBlauw"> blauw</label>
+            <label for="blauwS" class="Value"> 127</label>
+        </div>
+    </div>
+   <div class="preV" id="preV"></div>
+</div>
+<script src="scripts/code.js"></script>
+<footer>
+    <a href="../Labo3%20Index.html">Index</a>    ||    <a href="scripts/code.js">Script</a>    ||    <a href="../../index.html">Homepage</a>
+</footer>
+
 </body>
 </html>
