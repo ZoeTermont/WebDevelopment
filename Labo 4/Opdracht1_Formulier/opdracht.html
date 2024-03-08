@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Opdracht formulier</title>
+</head>
+<body>
+<h2>Please complete this excessively long form</h2>
+<h3>None of the provided information will be distributed</h3>
+
+<form action="opdracht.html" method="get">
+    <label for="voornaam">First name &ast;: </label>
+        <input type="text" name="voornaam" id="voornaam" placeholder="WHAT'S YOUR NAME?!" required="required"><br>
+    <label for="achternaam">Name &ast;: </label>
+        <input type="text" name="achternaam" id="achternaam" placeholder="GIVE ME YOUR NAME" required="required"><br><br>
+
+
+    Which sport do you practice?<br>
+    <input type="checkbox" name="sports" value="running" id="running"><label for="running">Running</label><br>
+    <input type="checkbox" name="sports" value="swimming" id="swimming"><label for="swimming">Swimming</label> <br>
+    <input type="checkbox" name="sports" value="rowing" id="rowing"><label for="rowing">Rowing</label> <br><br>
+
+    what is your gender?<br>
+    <input type="radio" name="gender" value="female" id="female"><label for="female">female</label><br>
+    <input type="radio" name="gender" value="male" id="male"><label for="male">male</label><br>
+    <input type="radio" name="gender" value="other" id="undecided"><label for="undecided">undecided</label><br><br>
+
+    <label for="movie">Favourite movie: </label><input type="text" name="movie" id="movie"/><br>
+    <label for="quote">Favourite quote: </label><input type="text" name="quote" id="quote" placeholder="Tell me the quote, my child"/><br>
+    <label for="password">Password &ast;: </label><input type="password" name="password" id="password"/><br>
+    Favourite food:
+        <select name="food">
+            <option value="hamburger">Hamburger</option>
+            <option value="pasta">Pasta</option>
+            <option value="holy bread">Holy bread</option>
+            <option value="chihuahuas">Chihuahuas</option>
+            <option value="escargot">Escargot</option>
+            <option value="trump">Donald Trump</option>
+            <option value="peel">Orange peel</option>
+            <option value="thumbs">Monkey thumbs</option>
+            <option value="normal">Something normal</option>
+        </select><br>
+    <input type="file" name="doc"><br>
+    <label for="email">Email adress: </label><input type="email" name="mail" id="email" placeholder="Enter your email adress"/><br>
+    <label for="url">Favourite site: </label><input type="url" name="url" id="url" placeholder="Nothing explicit, please"/><br>
+    <label for="nr">Favourite number between 1-10: </label><input type="number" name="nr" id="nr" max="10"/><br>
+    <label for="largenr">Favourite number between 11 and 1000: </label><input type="range" name="range" id="largenr"/><br>
+    <label for="bday">When were you born? </label><input type="date" name="bday" id="bday"/><br>
+    <label for="zip">Belgian zipcode number&ast;: </label><input type="text" id="zip" pattern="[1-9]\d{3}|999[0-2]" title="vier cijfers" placeholder="9992"/><br>
+    <label for="search">Search for something: </label><input type="search" id="search" name="searchbox"/><br>
+    <label for="kleur">What is your favourite color? </label><input type="color" id="kleur" name="kleur="/><br><br>
+
+<input type="submit" name="button" value="Verzenden"/>
+</form>
+
+
+</body>
+<footer> <!--w3 zegt dat dit een "stray footer" is-->
+    <a href="../index_labo_4.html">Index</a>    ||    <a href="../../index.html">Homepage</a>
+</footer>
+</html>
