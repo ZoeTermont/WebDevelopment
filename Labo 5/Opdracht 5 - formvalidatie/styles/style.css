@@ -1,0 +1,18 @@
+.inputField {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px; /* Hiermee geven we een beetje ruimte tussen het invoerveld en de foutmelding */
+}
+
+.error-msg {
+    margin-top: 5px;
+}
+
+.inputField.error {
+    border: 1px solid red;
+}

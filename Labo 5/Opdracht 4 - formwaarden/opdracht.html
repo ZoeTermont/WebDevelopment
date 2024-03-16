@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Oefening</title>
+
+</head>
+<body>
+<h1>Opdracht formwaarden</h1>
+<form action="opdracht.html" method="post">
+
+    <label for="roker">Is roker</label> <input type="checkbox" id="roker" name="isRoker"><br>
+    <label>Moedertaal</label>
+    <label><input type="radio" id="nl" name="moedertaal" value="nederlands"> Nederlands</label>
+    <label><input type="radio" id="fr" name="moedertaal" value="frans"> Frans</label>
+    <label><input type="radio" id="en" name="moedertaal" value="engels"> Engels</label><br>
+
+    <label for="buurland">Favoriete buurland</label>
+    <select name="buurland" id="buurland">
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Luxemburg">Luxemburg</option>
+        <option value="Duitsland">Duitsland</option>
+        <option value="Nederland">Nederland</option>
+        <option value="Engeland">Engeland</option>
+    </select><br>
+
+    <label for="bestelling">Bestelling</label><br>
+    <select name="bestelling" id="bestelling" multiple>
+        <option value="aardappelen">Aardappelen</option>
+        <option value="brood">Brood</option>
+        <option value="melk">Melk</option>
+        <option value="biefstuk">Biefstuk</option>
+        <option value="chips">Chips</option>
+        <option value="krant">Krant</option>
+    </select><br><br>
+    <input type="button" id="resultaat" value="Toon resultaat">
+
+
+</form>
+
+
+<script src="scripts/code.js"></script>
+</body>
+
+
+<footer><!--W3 zegt dat dit een "stray footer" is--><br><br>
+    <a href="../Index%20labo%205.html">Index</a> || <a href="../../index.html">Homepage</a> || <a
+            href="scripts/code.js">JavaScript file</a>
+</footer>
+
+</html> 
