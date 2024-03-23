@@ -7,24 +7,26 @@
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<h1>Colorpicker revamped</h1>
+<h1>Colorpicker 2.0</h1>
 <div class="color-picker">
 	<div class="sliders">
 		<div class="component">
-		<label for="rood">Rood:</label>
-		<input type="range" id="rood" min="0" max="255" value="0">
+			<label for="rood">Rood:</label>
+			<input type="range" id="rood" min="0" max="255" value="0">
 		</div>
 		<div class="component">
-		<label for="groen">Groen:</label>
-		<input type="range" id="groen" min="0" max="255" value="0">
+			<label for="groen">Groen:</label>
+			<input type="range" id="groen" min="0" max="255" value="0">
 		</div>
 		<div class="component">
-		<label for="blauw">Blauw:</label>
-		<input type="range" id="blauw" min="0" max="255" value="0">
+			<label for="blauw">Blauw:</label>
+			<input type="range" id="blauw" min="0" max="255" value="0">
 		</div>
 	</div>
-	<div class="swatch"></div>
-	<button id="copykleur">Copy</button>
+	<div class="swatch-container">
+		<div class="swatch"></div>
+		<button id="copykleur">Copy</button>
+	</div>
 </div>
 <div class="copykleuren">
 	<h2>Copied Colors</h2>
@@ -32,4 +34,11 @@
 </div>
 <script src="scripts/code.js"></script>
 </body>
+
+<footer>
+	<br><br>
+	<a href="../Index%206.html">Index</a> || <a href="../../index.html">Homepage</a> || <a
+		href="scripts/code.js">JavaScript file</a>
+</footer>
+
 </html>

@@ -1,48 +1,58 @@
-.colorpicker {
-    display:inline-block;
-    border:solid 5px lightgrey;
-    border-radius:10px;
-    padding:10px;
+.color-picker {
+    border: solid 5px lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
-#rood #groen #blauw {
-    vertical-align:middle;
-}
-.sliders span:nth-of-type(2) {
-    display:inline-block;
-    width:3em;
-    text-align:right;
-}
+
 .sliders {
-    display:inline-block;
-    height:100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Extra ruimte toegevoegd aan de rechterkant van de sliders */
 }
 
+.swatch-container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+/* Swatch */
 .swatch {
-    display:inline-block;
-    border:solid 1px black;
-    border-radius:5px;
-    margin:0 0 0 1em;
-    height:4em;
-    width:5em;
+    border: solid 1px black;
+    border-radius: 5px;
+    height: 5em;
+    width: 5em;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
-.copykleuren {
-    margin-top: 50px;
-    
+/* Kopieerknop */
+#copykleur {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.copykleuren h2 {
-    text-align: center;
+/* Gekopieerde kleuren */
+.copykleurenlijst {
+    white-space: nowrap;
 }
 
 .copied-color {
-    display:inline-block;
-    border:solid 5px lightgrey;
-    border-radius:10px;
-    padding:10px;
+    display: inline-block;
+    border: solid 5px lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    height: 5em;
+    width: 5em;
 }
 
+/* 'x' */
 .copied-color span {
-    margin-left: 5px;
     cursor: pointer;
+    float: right;
+    display: block;
+    margin-top: -10px;
 }

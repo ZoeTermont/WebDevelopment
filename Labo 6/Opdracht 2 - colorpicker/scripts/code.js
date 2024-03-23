@@ -1,45 +1,50 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const roodS = document.getElementById('rood');
-    const groenS = document.getElementById('groen');
-    const blauwS = document.getElementById('blauw');
-    const gecopkleuren = document.querySelector('.swatch');
-    const copybtn = document.getElementById('copykleur');
-    const copiedlijst = document.getElementById('copykleurenlijst');
+    const setup = () => {
+        // variabelen hier (sliders, swatch, button, kleuren (?)
+        const roodS = document.getElementById('rood');
+        const groenS = document.getElementById('groen');
+        const blauwS = document.getElementById('blauw');
+        const origineleSwatch = document.querySelector('.swatch');
+        const copyButton = document.getElementById('copykleur');
+        const copiedcolors = document.getElementById('copykleurenlijst');
+        //eventlisteners input, update (sliders) en dannog 'click', kopieerkleur (button)
+        roodS.addEventListener('input', updateSwatch);
+        groenS.addEventListener('input', updateSwatch);
+        blauwS.addEventListener('input', updateSwatch);
+        copyButton.addEventListener('click', kopieerKleur);
+    };
 
-    function updateColor() {
-        const roodget = roodS.value;
-        const groenget = groenS.value;
-        const blauwget = blauwS.value;
-        const rgbColor = `rgb(${roodget}, ${groenget}, ${blauwget})`;
-        gecopkleuren.style.backgroundColor = rgbColor;
+    // update swatch (sliders van boven .value) --> swatchkleur = `rgb(${roodNaam}, ${groenNaam}, ${blauwNaam})`
+    const updateSwatch = () => {
+        const roodWaarde = roodS.value;
+        const groenWaarde = groenS.value;
+        const blauwWaarde = blauwS.value;
+        const rgbKleur = `rgb(${roodWaarde}, ${groenWaarde}, ${blauwWaarde})`;
+        origineleSwatch.style.backgroundColor = rgbKleur;
     }
 
-    roodS.addEventListener('input', updateColor);
-    groenS.addEventListener('input', updateColor);
-    blauwS.addEventListener('input', updateColor);
+    // copied colors
+    const kopieerKleur = () => {
+        const roodValue = roodS.value;
+        const groenValue = groenS.value;
+        const blauwValue = blauwS.value;
+        const rgbKleur = `rgb(${roodValue}, ${groenValue}, ${blauwValue})`;
 
-    copybtn.addEventListener('click', function() {
-        const redValue = roodS.value;
-        const greenValue = groenS.value;
-        const blueValue = blauwS.value;
-        const rgbColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
-
-        const copiedColor = document.createElement('div');
-        copiedColor.classList.add('copied-color');
-        copiedColor.style.backgroundColor = rgbColor;
+        const gekopieerdeKleur = document.createElement('div');
+        gekopieerdeKleur.classList.add('copied-color');
+        gekopieerdeKleur.style.backgroundColor = rgbKleur;
 
         const deleteButton = document.createElement('span');
         deleteButton.innerText = 'x';
         deleteButton.addEventListener('click', function() {
-            copiedColor.remove();
+            gekopieerdeKleur.remove();
         });
 
-        copiedColor.appendChild(document.createTextNode(rgbColor));
-        copiedColor.appendChild(deleteButton);
-        copiedlijst.appendChild(copiedColor);
+        gekopieerdeKleur.appendChild(deleteButton);
+        copiedcolors.appendChild(gekopieerdeKleur);
 
-        copiedColor.addEventListener('click', function() {
-            gecopkleuren.style.backgroundColor = rgbColor;
+        gekopieerdeKleur.addEventListener('click', function() {
+            origineleSwatch.style.backgroundColor = rgbKleur;
         });
-    });
-});
+    }
+    window.addEventListener("load", setup);
+
