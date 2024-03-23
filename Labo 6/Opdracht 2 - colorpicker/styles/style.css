@@ -9,7 +9,7 @@
 .sliders {
     display: inline-block;
     vertical-align: top;
-    margin-right: 20px; /* Extra ruimte toegevoegd aan de rechterkant van de sliders */
+    margin-right: 20px;
 }
 
 .swatch-container {
@@ -41,8 +41,8 @@
 
 .copied-color {
     display: inline-block;
-    border: solid 5px lightgrey;
-    border-radius: 5px;
+    border: solid 2px black;
+
     padding: 10px;
     margin-right: 10px;
     height: 5em;
@@ -55,4 +55,6 @@
     float: right;
     display: block;
     margin-top: -10px;
+    background-position: 10px;
 }
+
