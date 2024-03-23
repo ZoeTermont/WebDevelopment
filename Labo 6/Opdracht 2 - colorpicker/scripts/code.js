@@ -1,13 +1,12 @@
-//sliders verspringen nog niet bij aanklikken copied
 const setup = () => {
     // swatch waarden rgb + samenvoegen + backgroundColor op samenvoeging zetten
     const updateSwatch = () => {
         const roodWaarde = roodS.value;
-        document.getElementById("labelrood").innerHTML = roodWaarde;
+        document.getElementById("labelrood").innerHTML=roodWaarde;
         const groenWaarde = groenS.value;
-        document.getElementById("labelgroen").innerHTML = groenWaarde;
+        document.getElementById("labelgroen").innerHTML=roodWaarde;
         const blauwWaarde = blauwS.value;
-        document.getElementById("labelblauw").innerHTML = blauwWaarde;
+        document.getElementById("labelblauw").innerHTML=roodWaarde;
         const rgbKleur = `rgb(${roodWaarde}, ${groenWaarde}, ${blauwWaarde})`;
         origineleSwatch.style.backgroundColor = rgbKleur;
     }
@@ -25,28 +24,19 @@ const setup = () => {
         gekopieerdeKleur.classList.add('copied-color');
         gekopieerdeKleur.style.backgroundColor = rgbKleur;
 
-
         const deleteButton = document.createElement('span');
         deleteButton.innerText = 'x';
         deleteButton.addEventListener('click', function () {
             gekopieerdeKleur.remove();
         });
-    const deletecopied = (btn) =>{
-        const swatch = btn.currentTarget.parentElement;
-        btn.currentTarget.remove();
-        swatch.remove();
-    }
 
         gekopieerdeKleur.appendChild(deleteButton);
         copiedcolors.appendChild(gekopieerdeKleur);
 
         gekopieerdeKleur.addEventListener('click', function () {
-            pasSlidersAan(rgbKleur);
+            origineleSwatch.style.backgroundColor = rgbKleur;
         });
     }
-
-
-
     //sliders (id: rood, groen, blauw) swatch (queryselector(.swatch)) copies id(copykleurenlijst)
     const roodS = document.getElementById('rood');
     const groenS = document.getElementById('groen');
