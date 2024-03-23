@@ -6,7 +6,7 @@
 .error {
     color: red;
     font-size: 12px;
-    margin-left: 10px; /* Hiermee geven we een beetje ruimte tussen het invoerveld en de foutmelding */
+    margin-left: 10px;
 }
 
 .error-msg {

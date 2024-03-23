@@ -1,0 +1,48 @@
+.colorpicker {
+    display:inline-block;
+    border:solid 5px lightgrey;
+    border-radius:10px;
+    padding:10px;
+}
+#rood #groen #blauw {
+    vertical-align:middle;
+}
+.sliders span:nth-of-type(2) {
+    display:inline-block;
+    width:3em;
+    text-align:right;
+}
+.sliders {
+    display:inline-block;
+    height:100%;
+}
+
+.swatch {
+    display:inline-block;
+    border:solid 1px black;
+    border-radius:5px;
+    margin:0 0 0 1em;
+    height:4em;
+    width:5em;
+}
+
+.copykleuren {
+    margin-top: 50px;
+    
+}
+
+.copykleuren h2 {
+    text-align: center;
+}
+
+.copied-color {
+    display:inline-block;
+    border:solid 5px lightgrey;
+    border-radius:10px;
+    padding:10px;
+}
+
+.copied-color span {
+    margin-left: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RGB Color Selector</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<h1>Colorpicker revamped</h1>
+<div class="color-picker">
+	<div class="sliders">
+		<div class="component">
+		<label for="rood">Rood:</label>
+		<input type="range" id="rood" min="0" max="255" value="0">
+		</div>
+		<div class="component">
+		<label for="groen">Groen:</label>
+		<input type="range" id="groen" min="0" max="255" value="0">
+		</div>
+		<div class="component">
+		<label for="blauw">Blauw:</label>
+		<input type="range" id="blauw" min="0" max="255" value="0">
+		</div>
+	</div>
+	<div class="swatch"></div>
+	<button id="copykleur">Copy</button>
+</div>
+<div class="copykleuren">
+	<h2>Copied Colors</h2>
+	<div id="copykleurenlijst"></div>
+</div>
+<script src="scripts/code.js"></script>
+</body>
+</html>
