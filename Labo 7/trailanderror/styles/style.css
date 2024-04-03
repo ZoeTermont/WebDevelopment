@@ -1,0 +1,10 @@
+#playfield {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+}
+
+#cards img {
+    height: 400px;
+
+}

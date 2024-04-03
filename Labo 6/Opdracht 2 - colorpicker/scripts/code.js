@@ -24,8 +24,10 @@ const setup = () => {
         gekopieerdeKleur.classList.add('copied-color');
         gekopieerdeKleur.style.backgroundColor = rgbKleur;
 
-        const deleteButton = document.createElement('span');
-        deleteButton.innerText = 'x';
+        const deleteButton = document.createElement('button');
+        deleteButton.value = 'x';
+        deleteButton.innerHTML = 'x';
+        deleteButton.classList.add("deleteBtn");
         deleteButton.addEventListener('click', function () {
             gekopieerdeKleur.remove();
         });
@@ -50,6 +52,7 @@ const setup = () => {
     groenS.addEventListener('input', updateSwatch);
     blauwS.addEventListener('input', updateSwatch);
     copyButton.addEventListener('click', kopieerKleur);
+    updateSwatch();
 }
 
 window.addEventListener("load", setup);

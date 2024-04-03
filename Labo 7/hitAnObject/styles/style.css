@@ -1,0 +1,16 @@
+#speelveld{
+    width: 600px;
+    height:800px;
+    border: 3px black solid;
+    background-color: rgba(202,255,250,0.67)
+}
+#speelveld image{
+    position: absolute;
+    display:none;
+}
+#score{
+    color: #5f9ea0;
+    font-size: 23px;
+    font-weight: bolder;
+
+}
