@@ -1,13 +1,14 @@
 .memory-card {
     width: 100px;
     height: 100px;
-    background-color: #ccc;
-    display: inline-block;
+    background-color: #f0f0f0;
     margin: 5px;
+    display: inline-block;
     cursor: pointer;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-back {
     background-image: url('../images/achterkant.jpg');
-    background-size: cover;
 }
