@@ -27,22 +27,22 @@ function start() {
     // Functie om een nieuwe kaart aan te maken
     function maakNieuweKaart(image) {
         let card = document.createElement('div');
-        card.classList.add('memory-card', 'card-back'); // Nieuwe classes toevoegen
+        card.classList.add('memory-card', 'achterkantKaart');
         card.dataset.image = image; // Attribuut 'image' instellen als kaartnummer
         card.addEventListener('click', () => {
-            // Controleren of het spel bezig is en of de gekozen kaart nog niet is gekozen
+
             if (!twoCardsClicked && !gekozenKaarten.includes(card)) {
-                card.classList.remove('card-back'); // Achterkant van de kaart verwijderen
-                card.style.backgroundImage = `url('images/${image}.jpg')`; // Afbeelding toevoegen
-                gekozenKaarten.push(card); // Gekozen kaart toevoegen aan het array van gekozen kaarten
-                // Als er twee kaarten zijn gekozen, controleer dan of ze overeenkomen na een korte vertraging
+                card.classList.remove('achterkantKaart');
+                card.style.backgroundImage = `url('images/${image}.jpg')`;
+                gekozenKaarten.push(card);
+
                 if (gekozenKaarten.length === 2) {
-                    twoCardsClicked = true; // Variabele instellen op true om te voorkomen dat er meer kaarten worden gekozen
-                    setTimeout(checkMatch, 1000); // Overeenkomst controleren na 1 seconde vertraging
+                    twoCardsClicked = true;
+                    setTimeout(checkMatch, 1000);
                 }
             }
         });
-        return card; // Aangemaakte kaart retourneren
+        return card;
     }
 
     // PANIEK
@@ -60,9 +60,9 @@ function start() {
             }, 50);
         } else {
             setTimeout(() => {
-                card1.classList.add('card-back');
+                card1.classList.add('achterkantKaart');
                 card1.style.backgroundImage = '';
-                card2.classList.add('card-back');
+                card2.classList.add('achterkantKaart');
                 card2.style.backgroundImage = '';
                 gekozenKaarten = [];
                 twoCardsClicked = false;
