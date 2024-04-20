@@ -24,7 +24,7 @@ function start() {
     let gekozenKaarten = [];
     let twoCardsClicked = false;
 
-    // Functie om een nieuwe kaart aan te maken
+
     function maakNieuweKaart(image) {
         let card = document.createElement('div');
         card.classList.add('memory-card', 'achterkantKaart');
