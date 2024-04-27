@@ -1,0 +1,33 @@
+#kader{
+  display:inline-block;
+    border: 1px solid #ccc;
+}
+#swatch{
+    float:right;
+    height:100px;
+    width:150px;
+    border: 1px solid #ccc;
+}
+#swatchcontainer{
+    float:right;
+    padding: 10px;
+}
+#sliders{
+    display:inline-block;
+    padding:10px;
+}
+#savebtn{
+
+    float: right ;
+    margin-top:80px;
+}
+#saved{
+
+
+ }
+.savedswatch{
+    display: inline-block;
+    margin: 20px;
+    height:100px;
+    width:150px;
+}
