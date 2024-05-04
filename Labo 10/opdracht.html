@@ -3,24 +3,32 @@
 <head>
 	<title>Oefening</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap-grid.css">
+
 </head>
 <body>
 
-<div class="container-fluid">
-	<div class="row">
-		<div class="col">
+<div class="container">
+	<header>
 			<h1>My Internet Start Page</h1>
-			<p>Zoekopdracht</p>
-			<input type="text" id="search"><br>
-			<p>Start command with "/[character][search]</p>
-			<button type="button" id="GO">Go!</button>
+	</header>
+
+	<label for="search"><strong>Zoekopdracht</strong></label>
+
+			<input type="text" id="search" class="col-12"><br>
+	<label for="search">Start command with "/[character][search]</label><br>
+	<label>
+			<button type="button" id="GO" class="col-12">Go!</button>
+	</label>
+		</div>
+
+
+	<div class="container" id="history">
+		<header><h1>History</h1></header>
+		<div class="row" id="historycards">
+
 		</div>
 	</div>
-	<div class="row" id="history">
-		<p>History</p>
-	</div>
-</div>
 
 <script src="scripts/code.js"></script>
 </body>
@@ -28,4 +36,4 @@
 	<br><br>
 	<a href="scripts/code.js">Code</a> ||  <a href="../../index.html">Homepage</a>
 </footer>
-</html> 
+</html>

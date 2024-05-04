@@ -1,26 +1,33 @@
 
+
 body {
     margin-left: 200px;
     margin-right:200px;
 }
 
-/* Centreer de inhoud van de container */
-.container {
-    margin-top: 50px; /* Ruimte boven de container */
+
+
+input{
+    height: 30px;
+    width: 95%;
+}
+#GO{
+    background-color: lightgreen;
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid grey;
 }
 
-/* Stijl voor de titel */
-h1 {
-    font-size: 24px;
-    font-weight: bold;
+
+#historycards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Stijl voor de paragrafen */
-p {
-    font-size: 16px;
-    margin-bottom: 10px;
+.card {
+    flex: 1 0 auto;
+    margin: 0 5px;
 }
-
-
-
